@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Logo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-bar img {
+            height: auto; /* Adjust the height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .top-bar img {
+                height: 80px; /* Adjust the height for tablets */
+            }
+        }
+        @media (max-width: 480px) {
+            .top-bar img {
+                height: 60px; /* Adjust the height for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="https://www.co-opbank.co.ke/wp-content/uploads/2025/02/Screenshot-2025-02-27-210150-e1740679472684.png" alt="Logo">
+    </div>
+    <div class="image-container">
+        <img src="https://www.co-opbank.co.ke/wp-content/uploads/2025/02/Screenshot-2025-02-27-210756.png" alt="Additional Image">
+    </div>
+    <div class="image-container">
+        <img src="https://www.co-opbank.co.ke/wp-content/uploads/2025/02/Screenshot-2025-02-27-211115-e1740679932604.png" alt="Another Image">
+    </div>
+    <div class="content">
+        <!-- Add your content here -->
+    </div>
+</body>
+</html>

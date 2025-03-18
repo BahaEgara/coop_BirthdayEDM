@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birthday Email</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+            overflow-x: hidden; /* Prevents side scrolling */
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap; /* Allows responsiveness */
+        }
+
+        .left {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .left img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Ensures original proportions */
+        }
+
+        .right {
+            width: 50%;
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .right img {
+            width: 100px; /* Keeps original size without stretching */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            border-top: 3px solid #000;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .message {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .highlight {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e91e63;
+            text-align: center;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .left img {
+                width: 100%;
+                height: auto;
+            }
+
+            .right {
+                padding: 20px;
+            }
+
+            .right img {
+                width: 80px; /* Scales properly on smaller screens */
+            }
+
+            .message, .highlight {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://www.co-opbank.co.ke/wp-content/uploads/2025/02/Screenshot-2025-02-27-at-10.27.43.png" alt="Birthday Image">
+        </div>
+        <div class="right">
+            <img src="https://www.co-opbank.co.ke/wp-content/uploads/2025/02/Screenshot-2025-02-26-at-16.40.26.png" alt="Small Birthday Icon">
+            <div class="line"></div>
+            <p class="message">Today is about yooouuuu!<br>
+                You‛re a year older! Wishing you looooots of fun</p>
+            <p class="highlight">HAPPY <br> BIRTHDAY</p>
+            <div class="line"></div>
+        </div>
+    </div>
+</body
